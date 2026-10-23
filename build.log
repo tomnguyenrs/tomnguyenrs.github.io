@@ -1,0 +1,11 @@
+Configuration file: /home/runner/work/tomnguyenrs.github.io/tomnguyenrs.github.io/_config.yml
+            Source: /home/runner/work/tomnguyenrs.github.io/tomnguyenrs.github.io
+       Destination: /home/runner/work/tomnguyenrs.github.io/tomnguyenrs.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+Terser: Minifying /home/runner/work/tomnguyenrs.github.io/tomnguyenrs.github.io/assets/motion/motion.js
+       Jekyll Feed: Generating feed for posts
+       Imagemagick: Searching files in /home/runner/work/tomnguyenrs.github.io/tomnguyenrs.github.io/assets/img/
+       Imagemagick: Generated 0 file(s)
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)

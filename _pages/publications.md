@@ -25,11 +25,11 @@ nav_order: 1
 
 ## presentations
 
-- **CEO Greed and Corporate Misconduct** (with Ning Tang, Chih-Yung Lin, Chien-Lin Lu)
+- **CEO Greed and Corporate Misconduct** (with Ning Tang, Chih-Yung Lin, Chien-Lin Lu)<br>
   Taiwan Finance Association (TFA) Annual Meeting, 2026; NYCU Summer Workshop in Finance (I) & (II), 2025
-- **The Effect of Real Effective Exchange Rate on Trade Balance: Evidence from Vietnam** (with Y. C. George Lin)
+- **The Effect of Real Effective Exchange Rate on Trade Balance: Evidence from Vietnam** (with Y. C. George Lin)<br>
   International Conference on Business, Economics and Management (ICBM), Taiwan, 2024
-- **The Dynamic Effect of Corporate Social Responsibility on Post-Merger Firm Performance: Evidence from Emerging Markets** (with Nhien-Tuyet Doan, Yi-Hao Lai)
+- **The Dynamic Effect of Corporate Social Responsibility on Post-Merger Firm Performance: Evidence from Emerging Markets** (with Nhien-Tuyet Doan, Yi-Hao Lai)<br>
   Vietnam Symposium in Banking and Finance (VSBF), Vietnam, 2021
-- **Is CSR Always a Crucial Factor in Promoting Post-Merger Corporate Financial Performance? Evidence from Emerging Markets via the Endogenous Switching Regression Model** (with Nhien-Tuyet Doan, Yi-Hao Lai)
+- **Is CSR Always a Crucial Factor in Promoting Post-Merger Corporate Financial Performance? Evidence from Emerging Markets via the Endogenous Switching Regression Model** (with Nhien-Tuyet Doan, Yi-Hao Lai)<br>
   International Conference on Business Administration – Fall Session (ICBA), Taiwan, 2021

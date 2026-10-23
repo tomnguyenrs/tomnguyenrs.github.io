@@ -5,7 +5,6 @@ on:
     branches:
       - master
       - main
-      - al-folio # TEMP: preview build of the al-folio migration; remove after merging
     paths:
       - "assets/**"
       - "**.bib"
@@ -59,7 +58,13 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -102,15 +107,28 @@ jobs:
           status=${PIPESTATUS[0]}
           if [ "$status" -ne 0 ]; then
             # Surface the end of the log as a public annotation for debugging
-            echo "::error title=jekyll build::$(tail -c 3500 build.log | sed -e "s/%/%25/g" | sed -e :a -e N -e "\$!ba" -e "s/\n/%0A/g")"
+            echo "::error title=jekyll build::$(grep -v "^\s*from " build.log | grep -iE -m 15 -A2 "error|exception|undefined" | head -c 3500 | sed -e "s/%/%25/g" | sed -e :a -e N -e "\$!ba" -e "s/\n/%0A/g")"
           fi
           exit $status
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-      - name: Deploy 🚀
+      - name: Upload Pages artifact 📦
         if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: _site
+          path: _site
+
+  # Publish via GitHub Pages "GitHub Actions" source; only main goes live.
+  publish:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4

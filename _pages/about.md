@@ -6,7 +6,7 @@ subtitle: PhD Student in Information Management & Finance, <a href='https://www.
 
 profile:
   align: right
-  image: # add your photo to assets/img/ and put its file name here, e.g. prof_pic.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>nqnhan.rs@gmail.com</p>

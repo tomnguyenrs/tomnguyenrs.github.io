@@ -1,12 +1,13 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
+title: cv
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 2
 ---
+
+<p><a href="{{ '/assets/pdf/CV.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Download CV (PDF)</a></p>
+
+<object data-lenis-prevent data="{{ '/assets/pdf/CV.pdf' | relative_url }}" type="application/pdf" width="100%" style="height: 85vh; border: none">
+  <p>Your browser cannot display the PDF here. <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">Download it instead</a>.</p>
+</object>

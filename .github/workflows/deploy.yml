@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - al-folio # TEMP: preview build of the al-folio migration; remove after merging
     paths:
       - "assets/**"
       - "**.bib"

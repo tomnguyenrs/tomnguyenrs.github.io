@@ -4,4 +4,7 @@
 cv_pdf: /assets/pdf/CV.pdf # path to your CV PDF file
 email: nqnhan.rs@gmail.com # your email address
 github_username: tomnguyenrs # your GitHub user name
-ssrn: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9240712 # your SSRN profile
+ssrn: # custom entry (jekyll-socials has no built-in SSRN key)
+  logo: ai ai-ssrn
+  title: SSRN
+  url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9240712

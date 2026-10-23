@@ -1,0 +1,15 @@
+{%- comment -%}
+  Local hook called by al_folio_core's bib.liquid after the venue line is built.
+  Adds `pages` (e.g. 1--41) and `status` (e.g. forthcoming) to the venue line.
+{%- endcomment -%}
+{%- if entry.pages -%}
+  {%- capture entrytype -%}{{ entrytype }}, <span style="white-space: nowrap">{{ entry.pages | replace: '--', '–' }}</span>{%- endcapture -%}
+{%- endif -%}
+{%- if entry.status -%}
+  {%- assign entrytype_plain = entrytype | strip_html | strip -%}
+  {%- if entrytype_plain == '' -%}
+    {%- capture entrytype -%}{{ entry.status }}{%- endcapture -%}
+  {%- else -%}
+    {%- capture entrytype -%}{{ entrytype }} ({{ entry.status }}){%- endcapture -%}
+  {%- endif -%}
+{%- endif -%}

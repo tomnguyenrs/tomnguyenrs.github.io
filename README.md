@@ -7,3 +7,4 @@ Personal academic website of Nguyen Quoc Nhan (Tom), built with [al-folio](https
 - Presentations: `_pages/publications.md`
 - CV: `assets/pdf/CV.pdf`
 - Scroll effects: `assets/motion/`, loaded via the `_includes/scripts.liquid` override (copied from `al_folio_core` 1.0.15 — re-sync if that gem pin changes)
+- Typography (justified prose, heading style): `assets/custom/site.css`; extra venue fields `pages` / `status` in papers.bib are rendered by `_includes/hook/bib.liquid`

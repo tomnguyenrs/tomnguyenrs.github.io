@@ -1,0 +1,24 @@
+/* Site typography tweaks. Loaded from _includes/scripts.liquid. */
+
+/* Justified prose (bio paragraphs, education list) on tablet/desktop; phones keep
+   left-aligned text because narrow columns open wide gaps. Paper titles and the
+   presentations list stay left-aligned. */
+@media (min-width: 576px) {
+  .post article p,
+  .post .clearfix li {
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+/* Section headings on the research page: same look as other page headings. */
+.publications h2 {
+  color: inherit;
+  text-align: left;
+  margin-top: 2.5rem;
+}
+.publications h2:first-of-type {
+  margin-top: 1rem;
+}

@@ -15,10 +15,10 @@ nav_order: 1
 
 <div class="publications">
 
-<h2 class="bibliography">publications</h2>
+<h2>publications</h2>
 {% bibliography --query @article %}
 
-<h2 class="bibliography">working papers</h2>
+<h2>working papers</h2>
 {% bibliography --query @unpublished %}
 
 </div>

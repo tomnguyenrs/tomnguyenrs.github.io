@@ -15,11 +15,23 @@ html.lenis body {
   overflow: hidden;
 }
 
-/* Frosted-glass navbar */
+/* Frosted-glass navbar on tablet/desktop only. On phones the collapsible menu
+   sits inside the navbar; backdrop-filter there is unreliable on iOS Safari and
+   makes the open menu see-through, so phones keep the solid theme bar. */
+@media (min-width: 576px) {
+  #navbar.navbar {
+    background-color: color-mix(in srgb, var(--global-bg-color) 72%, transparent) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+@media (max-width: 575.98px) {
+  /* Theme sets opacity 0.95; keep the open phone menu fully opaque and readable. */
+  #navbar.navbar {
+    opacity: 1;
+  }
+}
 #navbar.navbar {
-  background-color: color-mix(in srgb, var(--global-bg-color) 72%, transparent) !important;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.4s ease;
 }

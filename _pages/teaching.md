@@ -9,7 +9,7 @@ nav_order: 3
 
 **Upcoming**
 
-- _Risk Management_ — Chung Yuan Christian University (CYCU), Taiwan, Spring 2027
+- _Risk Management_ — Chung Yuan Christian University, Taiwan, Spring 2027
 
 Teaching materials will be posted here.
 
